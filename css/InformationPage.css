@@ -1,0 +1,163 @@
+ .logo
+{
+        max-width: 50%;  
+}
+
+
+
+
+/*
+Desktop view
+*/
+@media screen and (min-width:992px)
+{
+    .grid-container
+    {
+        grid-template-columns: repeat(6,auto);
+        width: 90%;
+        display:grid;
+        margin: 0 auto; 
+    
+    }
+
+ 
+    
+     .navigation 
+    {
+    grid-column: 1/13;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px 0 20px;
+  overflow: hidden;
+  background-color: maroon;
+	}
+    
+    .list {
+	float: left;
+	}
+
+	li a {
+	display: block;
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	}
+    
+   #links
+    {
+        color: black;
+    }
+    
+    #link{
+        color:black;
+        font-size: 1.5em;
+    }
+    
+  
+
+    
+    #box
+    {
+  background-color: lightgrey;
+  width: px;
+  border: 7px solid maroon;
+  padding: 20px;
+  margin: 20px;
+    
+    }
+    
+    #box p{
+        font-size: 2em;
+    }
+    
+    #box h1{
+        font-size: 2em;
+    }
+}
+
+/*
+mobile view
+*/
+@media screen and (max-width:600px)
+{
+      .navigation 
+    {
+    grid-column: 1/13;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px 0 20px;
+  overflow: hidden;
+  background-color: maroon;
+	}
+    
+  
+
+	li a {
+	display: block;
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	}
+    
+      #box
+    {
+  background-color: lightgrey;
+  width: px;
+  border: 7px solid maroon;
+  padding: 20px;
+  margin: 20px;
+    
+    }
+    
+    #box p{
+        font-size: 2em;
+    }
+    
+    #box h1{
+        font-size: 2em;
+    }
+}
+
+
+/*
+Tablet view
+*/
+@media screen and (min-width:768px)
+{
+      .navigation 
+    {
+    grid-column: 1/13;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px 0 20px;
+  overflow: hidden;
+  background-color: maroon;
+	}
+    
+  
+
+	li a {
+	display: block;
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	}
+    
+      #box
+    {
+  background-color: lightgrey;
+  width: px;
+  border: 7px solid maroon;
+  padding: 20px;
+  margin: 20px;
+    
+    }
+    
+    #box p{
+        font-size: 2em;
+    }
+    
+    #box h1{
+        font-size: 2em;
+    }
+}

@@ -1,0 +1,181 @@
+
+ .logo
+{
+        max-width: 50%;  
+}
+
+
+
+
+/*
+Desktop view
+*/
+@media screen and (min-width:992px)
+{
+    .grid-container
+    {
+        grid-template-columns: repeat(6,auto);
+        width: 90%;
+        display:grid;
+        margin: 0 auto; 
+    
+    }
+
+ 
+    
+     .navigation 
+    {
+    grid-column: 1/13;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px 0 20px;
+  overflow: hidden;
+  background-color: maroon;
+	}
+    
+     .list {
+	float: left;
+	}
+
+	li a {
+	display: block;
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	}
+
+
+
+label {
+			float: left;
+			width: 150px;
+		}
+
+		#submit {
+			margin-left: 150px;
+		} 
+
+		form {
+			background-color: beige;
+			padding: 1em;
+			border: 1px solid darkgreen;
+			margin: 1em;
+		}
+    
+    #box
+    {
+  background-color: lightgrey;
+  width: 750px;
+  border: 7px solid maroon;
+  padding: 20px;
+  margin: 20px;
+       
+    
+    }
+}
+
+/*
+mobile view
+*/
+@media screen and (max-width:600px)
+{
+      .navigation 
+    {
+    grid-column: 1/13;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px 0 20px;
+  overflow: hidden;
+  background-color: maroon;
+	}
+    
+  
+
+	li a {
+	display: block;
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	}
+    
+    label {
+			float: left;
+			width: 150px;
+		}
+
+		#submit {
+			margin-left: 150px;
+		} 
+
+		form {
+			background-color: beige;
+			padding: 1em;
+			border: 1px solid darkgreen;
+			margin: 1em;
+		}
+    
+    #box
+    {
+  background-color: lightgrey;
+  width: px;
+  border: 7px solid maroon;
+  padding: 20px;
+  margin: 20px;
+       
+    
+    }
+}
+
+
+/*
+Tablet view
+*/
+@media screen and (min-width:768px)
+{
+      .navigation 
+    {
+    grid-column: 1/13;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px 0 20px;
+  overflow: hidden;
+  background-color: maroon;
+	}
+    
+  
+
+	li a {
+	display: block;
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	}
+    
+    label {
+			float: left;
+			width: 150px;
+		}
+
+		#submit {
+			margin-left: 150px;
+		} 
+
+		form {
+			background-color: beige;
+			padding: 1em;
+			border: 1px solid darkgreen;
+			margin: 1em;
+		}
+    
+    #box
+    {
+  background-color: lightgrey;
+  width: px;
+  border: 7px solid maroon;
+  padding: 20px;
+  margin: 20px;
+       
+    
+    }
+}
+    

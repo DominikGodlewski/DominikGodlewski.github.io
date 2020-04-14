@@ -1,0 +1,135 @@
+<!DOCTYPE html >
+
+<html lang="en">
+<head >
+<title>Contact Us</title>
+<link rel="Stylesheet" type="text/css" href="css/ContactUs.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">
+</style>
+    
+     <script>
+             
+        function validate()
+        {	
+            var name_val=document.getElementById("name").value;
+	        if  (name_val==null || name_val=="")	
+	    {	
+          alert("Please enter your name.");
+		  return false;
+	    }
+            var address_val=document.getElementById("address").value;
+	        if  (address_val==null || address_val=="")
+                {
+                    alert("Please enter your address");
+                    return false;
+                }
+            
+             var mobile_val=document.getElementById("mobile").value;
+	        if  (mobile_val==null || mobile_val=="")
+                {
+                    alert("Please enter your mobile number");
+                    return false;
+                }
+            
+             var email1_val=document.getElementById("email1").value;
+	        if  (email1_val==null || email1_val=="")
+                {
+                    alert("Please enter your email");
+                    return false;
+                }
+            
+              var email2_val=document.getElementById("email2").value;
+	        if  (email2_val==null || email2_val=="")
+                {
+                    alert("Please enter your email");
+                    return false;
+                }
+            
+            if (email2_val != email1_val){
+                alert("emails are not the same");
+                return false;
+            }
+            
+             var member_val=document.getElementById("member").value;
+	        if  (member_val==null || member_val=="")
+                {
+                    alert("Please indicatae if you are a member or not");
+                    return false;
+                }
+            
+            
+             function validateEmail(email){
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            return emailPattern.test(email);
+        }
+    </script>
+    
+</head>
+<body background="backgroundImage.jpg">
+    <div class="grid-container">
+        
+    
+        <div class="logo">
+            <img src="images/logo.png" alt="logo">
+        </div>
+        
+         
+    
+        
+    
+    
+   <ul class="navigation">
+		<li class="list"><a href="HomePage.html">Home</a></li>
+		<li class="list"><a href="ContactUs.html">Contact</a></li>
+		<li class="list"><a href="AboutUs.html">About us</a></li>
+		<li class="list"><a href="Events.html">Events</a></li>
+        <li class="list"><a href="gallery.html">Gallery</a></li>
+        <li class="list"><a href="InformationPage.html">Information</a></li>
+        <li class="list"><a href="links.html">Useful Links</a></li>
+	</ul> 
+        
+        
+<div id="box">
+            
+        <form id="" method="get" method="post" action="http://litstudentprojects.net/rwd-a2-response.php" onSubmit="return validate();">
+          
+          <p><label for="name">Name</label>
+          <p><input type="text" name="name" max="20" id="name" ></p>
+          </p>
+          
+          <p><label for="address">Address</label> 
+          <p><input type="text" name="address" max="100" id="address"></p>
+          </p>
+    
+          <p><label for="mobile">Mobile number</label>
+          <p><input type="tel" name="mobile" max="10"></p>
+          </p>
+
+          <p><label for="email1">Email Address</label>
+          <p><input type="email" name="email1" id="email1"></p>
+          </p>
+
+          <p><label for="email2">Retype Email Address</label>
+          <p><input type="email" name="email2" id="email2"></p>
+          </p>
+
+          <p><label for="member">Member</label>
+              <br>
+	      <p><input type="radio" name="member"  value="Yes">Yes</p>
+	      <p><input type="radio" name="member" value="No">No</p>
+          </p>
+
+
+          <p><label for="query">Query / Comment</label></p>
+	      <textarea name="query" rows="5" cols="60" id="query" min="1" max="300">Please input your comment/query here</textarea>
+	
+
+
+          <p>
+          <input type="submit" name="submit" id="submit" value="Submit">
+         </p> 
+
+      </form>
+</div>
